@@ -10,11 +10,8 @@ bool studyButtonClicked(int mouseX, int mouseY, int buttonX, int buttonY, int bu
         return true;
     return false;
 }
-void VisualizePattern(const std::vector<int>& pattern, int size) {
-    /*if (pattern.size() != size * size) {
-        throw std::runtime_error("Pattern size does not match the specified dimensions.");
-    }*/
-
+void VisualizePattern() {
+    int size = 8;
     // 定义Hopfield网络的神经元数量为10
     int num_neurons = 64;
     HopFieldNetworkMachine* HNMachine = new HopFieldNetworkMachine(num_neurons);

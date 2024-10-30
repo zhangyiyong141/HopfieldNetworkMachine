@@ -31,25 +31,7 @@ int main() {
     //}
     //std::cout << "\n";
 
-    // 确保定义一个包含64个元素的模式
-    std::vector<int> pattern = {
-        1, 1, 1, 1, 1, 1, 1, 1,
-        1, -1, -1, -1, -1, -1, 1, 1,
-        1, -1, -1, -1, -1, -1, 1, 1,
-        1, 1, 1, 1, 1, 1, 1, 1,
-        1, -1, -1, -1, -1, -1, 1, 1,
-        1, -1, -1, -1, -1, -1, 1, 1,
-        1, 1, 1, 1, 1, 1, 1, 1,
-        1, 1, 1, 1, 1, 1, 1, 1
-    };
-
-    // 确保模式的大小是 8x8
-    if (pattern.size() != 64) {
-        std::cerr << "Error: Pattern must be of size 8x8 (64 elements)." << std::endl;
-        return -1;
-    }
-
-    VisualizePattern(pattern, 8);
+    VisualizePattern();
 
     return 0;
 }
